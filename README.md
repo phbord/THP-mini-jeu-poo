@@ -49,3 +49,6 @@ nouvelle méthode *search_health_pack*
 ### 2. app_3.rb en chef d'orchestre
 ### 3. Quelques fonctionnalités en plus
 - système où les ennemies vont débarquer au compte-goutte
+- ajouter deux attributs : *@players_left* et *@enemies_in_sight*
+- modifier la méthode *is_still_ongoing?*
+- méthode *new_players_in_sight*

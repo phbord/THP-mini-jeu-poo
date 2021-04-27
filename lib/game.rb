@@ -14,7 +14,7 @@ class Game < HumanPlayer
 
     #Génère les joueurs, les ajoute et instancie dans un tableau
     def generate_players(num=4)
-        first_names = ['JCVD', 'chuck norris', 'stallone', 'steaven seagal', 'dolf lungren', 'jet li', 'tony jaa']
+        first_names = ['JCVD', 'chuck norris', 'stallone', 'steaven seagal', 'dolf lungren', 'jet li', 'tony jaa', 'karl marx', 'staline', 'ben laden']
         num.times do |n|
             n = Player.new(first_names.sample)
             @enemies << n
@@ -81,5 +81,9 @@ class Game < HumanPlayer
         else
             puts "Loser ! Tu as perdu !"
         end
+    end
+
+    #Ajoute des ennemis en vue
+    def new_players_in_sight
     end
 end
