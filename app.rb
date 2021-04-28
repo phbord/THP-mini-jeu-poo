@@ -1,11 +1,8 @@
-require 'dotenv'
-require 'pry'
-require 'rspec'
-require 'rubocop'
 require 'bundler'
 Bundler.require
 
-require_relative 'lib/player'
+$:.unshift File.expand_path("./../lib", __FILE__)
+require 'player'
 #binding.pry
 
 def perform
